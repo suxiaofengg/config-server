@@ -1,0 +1,56 @@
+#日志地址
+log:
+  path: /ztocwst/server/stone-admin/log/
+
+#朱砂首页
+admin:
+   domain: http://zopadmin.qa.ztocwst.com/#/dashboard
+
+#网关地址
+gateway:
+   domain: http://zopgw.qa.ztocwst.com
+
+#同步仓库和货主配置信息
+jingtian:
+   customerId: jingtian
+   appKey: jingtian
+   appSecret: 0d7ba9d73a5215a05895bbdfe1418444
+
+#内部客户id专用
+inner:
+  customer:
+    id: ztocwstself
+    ztocwstAppKey: a5942f56ce56025b06de1576c8ea7457
+    ztocwstAppSecret: 718be8a53ec5531c6627347255394398
+
+################ SSOConfig file #################
+##应用标识
+sso:
+  app: STONE-ADMIN
+##是否校验ip一致性
+  checkIp: true
+##单位s秒，设置 -1永不失效，大于 0 失效时
+  cache:
+    expires: 3600
+
+##SSO单点登录服务地址（jeecg特殊处理）
+  login:
+    url: http://sso.qa.ops.com/#/login
+##SSO单点登录服务地址（jeecg特殊处理）
+  timeout:
+    url: http://sso.qa.ops.com/#/login?redirect=%2Fdashboard
+##首页地址-客户端
+  index:
+    url:
+##登出url,客户端
+  logout:
+    url:
+##网关获取当前登录人接口
+  current:
+    user:
+      url: http://zopgw.qa.ztocwst.com/api/inners/gw
+
+#zk地址
+zs:
+  zk:
+    addr: 172.16.102.66:2181
